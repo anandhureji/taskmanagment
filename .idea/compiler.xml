@@ -12,17 +12,19 @@
         </processorPath>
         <module name="taskservice" />
       </profile>
-      <profile name="Annotation profile for submissionservice" enabled="true">
+      <profile name="Annotation profile for userservice" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
         </processorPath>
-        <module name="submissionservice" />
         <module name="userservice" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="submissionservice" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
