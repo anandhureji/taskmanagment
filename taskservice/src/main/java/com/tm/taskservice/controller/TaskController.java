@@ -63,8 +63,8 @@ public class TaskController {
     @PutMapping("/{id}/user/{userid}/assigned")
     public ResponseEntity<Task> assignedTaskToUser(
             @PathVariable Long id,
-            @PathVariable Long userId,
-            @RequestHeader("Authorization") String jwt) throws Exception {
+            @PathVariable("userid") Long userId,  // ✅ Matches {userid} in the URL
+            @RequestHeader("Authorization") String jwt) throws Exception  {
 
         UserDto userDto = userService.getUserProfile(jwt);
         Task task = taskService.assignedToUser(userId,id);
