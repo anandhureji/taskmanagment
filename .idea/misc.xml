@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/../submissionservice/submissionservice/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/submissionservice/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway/pom.xml" />
       </list>
     </option>
   </component>
